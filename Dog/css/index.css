@@ -1,0 +1,23 @@
+
+       .btn-dog{
+           font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+           margin-left: 60px;
+           margin-top:-160px;
+  color: #fff;
+           background-color: cornflowerblue;
+  border: 2px solid #fff;
+       }
+       .btn-dog:hover{
+          background: #007bff;
+          border-color: #007bff;
+          color: #fff;
+       }
+       btn
+ 
