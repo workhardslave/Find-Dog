@@ -4,11 +4,13 @@
 ### Preview
 ![finddog_main](./img/finddog_main.png)
 
+### Main Function
+
 ### Tech Stack
 |Frontend    |Backend                     |Database    |AI            |API                   |
 |------------|----------------------------|------------|--------------|----------------------|
 |`Bootstrap` |`PHP` `PHP Mailer`          |`Maria DB`  |`Tensorflow`  |`Public Data Open API`|
-|            |`PHP Botman` `Zend OPcache` |            |`Keras`       |                      |
+|            |`Zend OPcache`              |            |`Keras`       |                      |
 
 ### Developer
 - Yunghoon Jeong, 정영훈
