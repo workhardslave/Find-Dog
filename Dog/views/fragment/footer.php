@@ -32,16 +32,16 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
-  <script src="/Dog/lib/jquery/jquery.min.js"></script>
-  <script src="/Dog/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="/Dog/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/Dog/lib/easing/easing.min.js"></script>
-  <script src="/Dog/lib/mobile-nav/mobile-nav.js"></script>
-  <script src="/Dog/lib/wow/wow.min.js"></script>
-  <script src="/Dog/lib/waypoints/waypoints.min.js"></script>
-  <script src="/Dog/lib/counterup/counterup.min.js"></script>
-  <script src="/Dog/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="/Dog/lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="/Dog/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/FindDog/Dog/lib/jquery/jquery.min.js"></script>
+  <script src="/FindDog/Dog/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="/FindDog/Dog/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/FindDog/Dog/lib/easing/easing.min.js"></script>
+  <script src="/FindDog/Dog/lib/mobile-nav/mobile-nav.js"></script>
+  <script src="/FindDog/Dog/lib/wow/wow.min.js"></script>
+  <script src="/FindDog/Dog/lib/waypoints/waypoints.min.js"></script>
+  <script src="/FindDog/Dog/lib/counterup/counterup.min.js"></script>
+  <script src="/FindDog/Dog/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/FindDog/Dog/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="/FindDog/Dog/lib/lightbox/js/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="/Dog/contactform/contactform.js"></script>
+  <script src="/FindDog/Dog/contactform/contactform.js"></script>

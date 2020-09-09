@@ -91,7 +91,7 @@
               <figure>
                 <img src="<?=$img_url?>"  alt="" width="260" height="260">
                 <a href="<?=$img_url?>" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="/Dog/views/animaldetail.php?petId=<?=$petId?>" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="/FindDog/Dog/views/animalDetail.php?petId=<?=$petId?>" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
@@ -111,9 +111,9 @@
 		<?php include_once "./fragment/footer.php" ?>
  
   <!-- Template Main Javascript File -->
-  <script src="/Dog/js/main.js"></script>
+  <script src="/FindDog/Dog/js/main.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-    <script  src="/Dog/js/select.js"></script>
+    <script  src="/FindDog/Dog/js/select.js"></script>
 
 </body>
 </html>

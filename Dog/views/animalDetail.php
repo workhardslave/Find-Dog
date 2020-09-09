@@ -54,6 +54,7 @@
 			        $careAddr=$store->careAddr;
 			        $officeTel=$store->officetel;
 			        $sexF=$store->sexCd;
+			        $processState=$store->processState;
                     
                     if($sexF == 'M')
                     $sex="수컷";
@@ -93,7 +94,7 @@
             <li class="list-group-item">발견 일시 : <?=$happenDt?></li>
             <li class="list-group-item">발견 장소 : <?=$happenPlace?></li>
             <li class="list-group-item">특징 : <?=$specialMark?></li>
-            <li class="list-group-item">보호소 이름 : <?=$careNm?></li>
+            <li class="list-group-item">상태 : <?=$processState?></li>
           </ul>
         </div>
       </div>
@@ -115,50 +116,19 @@
          <div class="col-lg-3"></div>
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-md-5 info">
+              <div class="col-md-8 info">
                 <i class="ion-ios-location-outline"></i>
-                <p><?=$careAddr?></p>
+                <p><span id="shelterLocation" style="cursor: pointer;" data-action="https://map.naver.com/v5/search/<?=$careAddr?>">
+                	<?=$careAddr?>
+                </span></p>
               </div>
               <div class="col-md-4 info">
-                <i class="ion-ios-email-outline"></i>
-                <p>vetai@daum.net</p>
-              </div>
-              <div class="col-md-3 info">
                 <i class="ion-ios-telephone-outline"></i>
                 <p><?=$careTel?></p>
               </div>
             </div>
 
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="./phpMailer.php" method="post" role="form" class="contactForm">
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="이메일" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <input type="password" name="pass" class="form-control" id="pass" placeholder="비밀번호">
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="제목" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="메세지"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit" title="Send Message">예약하기</button></div>
-              </form>
-            </div>
-          </div>
-           <div class="col-lg-3">
-            </div>
-
-        </div>
+            
 
       </div>
     </section><!-- #contact -->
@@ -169,6 +139,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         </body>
     </div>
+    <script>
+	    $(function(){
+		    $("#shelterLocation").click(function(){
+			    var action_url = $(this).attr("data-action");
+			    console.log(action_url);
+			    $(location).attr("href",action_url);
+			});
+		});
+    </script>
     
     
     </body>

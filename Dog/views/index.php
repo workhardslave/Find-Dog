@@ -36,7 +36,7 @@ $object = simplexml_load_string($response);
 <html lang="en">
 <head>
 	<?php include_once "./fragment/head.php" ?>
-	 <link href="/Dog/css/index.css" rel="stylesheet"> 
+	 <link href="/FindDog/Dog/css/index.css" rel="stylesheet"> 
 </head>
 
 <body>
@@ -75,7 +75,7 @@ $object = simplexml_load_string($response);
         </div>
         <?php } ?>
         <div class="avatar-preview" style="margin-left: 140px;margin-top: -100px;">
-            <div id="imagePreview" style="background-image: url('/Dog/img/1.Beagle-On-White-07.jpg')">
+            <div id="imagePreview" style="background-image: url('/FindDog/Dog/img/1.Beagle-On-White-07.jpg')">
             </div>
             <?php 
             	if($userid && $username) {
@@ -135,7 +135,7 @@ $object = simplexml_load_string($response);
           </div>
 
           <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
-            <img src="/Dog/img/about-img.svg" class="img-fluid" alt="">
+            <img src="/FindDog/Dog/img/about-img.svg" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -234,8 +234,8 @@ $object = simplexml_load_string($response);
   <?php include_once "./fragment/footer.php" ?>
   
   <!-- Template Main Javascript File -->
-  <script src="/Dog/js/main.js"></script>
-    <script  src="/Dog/js/upload.js"></script>
+  <script src="/FindDog/Dog/js/main.js"></script>
+    <script  src="/FindDog/js/upload.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 </body>
