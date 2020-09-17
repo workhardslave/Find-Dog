@@ -11,7 +11,7 @@
 	//exec('python test.py',$out,$erre);
 	//C:\xampp\htdocs\findDog\views>
 	//print_r($out);
-	$result=iconv("EUC-KR", "UTF-8", $result);
+	$result=iconv("EUC-KR", "UTF-8", $result); // 결과 값을 EUC-KR -> UTF-8로 변환
 	
 	if(!empty($pageNo) && $pageNo !==1){
 	        $pageNo=3;
@@ -42,6 +42,7 @@
 <html lang="en">
 <head>
  <?php include_once "./fragment/head.php" ?>
+
     </head>
      <header id="header" class="fixed-top">
     	<?php include_once "./fragment/header.php" ?>

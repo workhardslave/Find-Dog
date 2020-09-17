@@ -17,7 +17,9 @@
     $start_bgn="$start_y$start_m$start_d";
     $endde="$end_y$end_m$end_d";
 
-    $ch = curl_init();
+    // curl 세션 초기화
+    $ch = curl_init(); 
+    // curl 요청에 openAPI URL 사용
     $url = 'http://openapi.animal.go.kr/openapi/service/rest/abandonmentPublicSrvc/abandonmentPublic'; 
     $queryParams = '?' . 
     urlencode('bgnde').'='.$start_bgn.'&' . 
@@ -29,13 +31,14 @@
     urlencode('numOfRows').'='.$numOfRows.'&'.
     urlencode('ServiceKey') . '=zaJnyE3Aobwhy8csFwSTIuNo84En4UDHPDeeUDUX3NYzpZw7P3uxDUk1G6957wa4l%2Bd%2Bz%2BbD%2FMzAhNoqZ9kgVg%3D%3D'; 
 
-    curl_setopt($ch, CURLOPT_URL, $url . $queryParams);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-    curl_setopt($ch, CURLOPT_HEADER, FALSE);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    // 전송을 위한 옵션 설정
+    curl_setopt($ch, CURLOPT_URL, $url . $queryParams); // 접속할 URL 지정
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE); // 요청 결과를 문자열로 반환
+    curl_setopt($ch, CURLOPT_HEADER, FALSE); // 헤더 출력 여부
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET'); // GET 방식으로 요청
 
-    $response = curl_exec($ch);
-    curl_close($ch);
+    $response = curl_exec($ch); // curl 세션 수행
+    curl_close($ch); // curl 세션 닫기
 
     $object = simplexml_load_string($response);
  ?>   

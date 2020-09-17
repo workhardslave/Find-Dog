@@ -7,7 +7,7 @@ $eday='31'; $sday='01';
 $bgnde="$year$month$sday";
 $endded="$year$month$eday";
 
-    
+// "C:/jupyter_project/image_data"    
 $del_directory = "C:/jupyter_project/image_data"; // 절대경로
 $del_handle = opendir($del_directory);
 while ($del_file = readdir($del_handle)) {
@@ -235,7 +235,7 @@ $object = simplexml_load_string($response);
   
   <!-- Template Main Javascript File -->
   <script src="/FindDog/Dog/js/main.js"></script>
-    <script  src="/FindDog/js/upload.js"></script>
+    <script  src="/FindDog/Dog/js/upload.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 </body>
