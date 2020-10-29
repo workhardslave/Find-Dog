@@ -109,7 +109,7 @@
       <div class="container-fluid" >
 
         <div class="section-header" style="margin-top:-30px;">
-          <h3>Email Contact</h3>
+          <h3>Contact</h3>
         </div>
     
         <div class="row wow fadeInUp" >
