@@ -2,7 +2,7 @@
 이미지 인식을 이용한 유기견 매칭 서비스
 
 ### Preview
-![finddog_main](./img/finddog_main.png)
+![finddog_preview](./img/finddog_preview.gif)
 
 ### Main Function
 - 로그인, 로그아웃, 회원가입, 회원정보수정
