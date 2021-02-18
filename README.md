@@ -1,5 +1,5 @@
 ## Find Dog (P-Project)
-이미지 인식을 이용한 유기견 매칭 서비스
+이미지 분류 기술을 이용한 유기견 매칭 서비스
 
 ### Preview
 ![finddog_preview](./img/finddog_preview.gif)
